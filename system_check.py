@@ -14,15 +14,15 @@ from datetime import datetime
 
 # --- Imports de los módulos del proyecto ---
 try:
-    from graph.graph import Graph
-    from algorithms.dijkstra import DijkstraSolver
-    from algorithms.mst import PrimMST
-    from algorithms.kruskal import KruskalMST
-    from algorithms.flow import EdmondsKarp
-    from core.router import SincelejoRouter
-    from trees.avl import AVLTree
-    from visualizer.map_ui import SincelejoMapUI
-    from analysis.impact import SETImpactAnalyzer
+    from modulo_B.graph.graph import Graph
+    from modulo_B.algorithms.dijkstra import DijkstraSolver
+    from modulo_B.algorithms.mst import PrimMST
+    from modulo_B.algorithms.kruskal import KruskalMST
+    from modulo_B.algorithms.flow import EdmondsKarp
+    from modulo_A.core.router import SincelejoRouter
+    from modulo_A.trees.avl import AVLTree
+    from modulo_C.visualizer.map_ui import SincelejoMapUI
+    from modulo_C.analysis.impact import SETImpactAnalyzer
 except ImportError as e:
     print(f"\n[ERROR] No se pudo importar un módulo crítico: {e}")
     sys.exit(1)
@@ -142,7 +142,7 @@ def run_checks():
 
     # 9. VALIDACIÓN MAPA & UI
     try:
-        from visualizer.map_ui import SincelejoMapUI, HAS_FOLIUM
+        from modulo_C.visualizer.map_ui import SincelejoMapUI, HAS_FOLIUM
         ui = SincelejoMapUI(g)
         html = ui.generate_html()
         

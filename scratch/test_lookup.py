@@ -1,5 +1,5 @@
-from graph.graph import Graph
-from core.router import SincelejoRouter
+from modulo_B.graph.graph import Graph
+from modulo_A.core.router import SincelejoRouter
 
 def test_lookup():
     g = Graph()

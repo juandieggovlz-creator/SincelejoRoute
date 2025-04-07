@@ -1,7 +1,7 @@
 ================================================================
   SincelejoRoute v2 — Reporte de Sesión SETP
-  Inicio : 2026-05-19 15:40:08
-  Cierre : 2026-05-19 15:40:08
+  Inicio : 2026-05-20 15:01:44
+  Cierre : 2026-05-20 15:01:44
 ================================================================
 
 
@@ -30,7 +30,7 @@
 
   MST global (Prim) : 88 min total | 19 aristas
 
-  ⏱  Tiempo total consulta : 0.6 ms ✓
+  ⏱  Tiempo total consulta : 0.4 ms ✓
 
 ════════════════════════════════════════════════════════════════
   UNISUCRE → IPS SEYSA
@@ -46,7 +46,7 @@
 
   MST global (Prim) : 88 min total | 19 aristas
 
-  ⏱  Tiempo total consulta : 0.4 ms ✓
+  ⏱  Tiempo total consulta : 0.2 ms ✓
 
 ════════════════════════════════════════════════════════════════
   El Pescador → Estación Central SETP
@@ -63,7 +63,7 @@
 
   MST global (Prim) : 88 min total | 19 aristas
 
-  ⏱  Tiempo total consulta : 0.3 ms ✓
+  ⏱  Tiempo total consulta : 0.2 ms ✓
 
 ════════════════════════════════════════════════════════════════
   Verificación de Métricas del Enunciado

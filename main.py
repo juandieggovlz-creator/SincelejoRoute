@@ -13,19 +13,19 @@ import os
 import time
 from datetime import datetime
 
-from graph.graph import Graph
-from algorithms.dijkstra import DijkstraSolver
-from algorithms.bellman import BellmanFordSolver
-from algorithms.mst import PrimMST
-from algorithms.kruskal import KruskalMST
-from algorithms.flow import EdmondsKarp
-from analysis.impact import SETImpactAnalyzer
-from analysis.pert import get_setp_phase2_planning
-from analysis.nash import NashSolver, GameSolver
-from core.router import SincelejoRouter
-from trees.b_tree import BTree
-from visualizer.map_visualizer import MapVisualizer
-from visualizer.map_ui import SincelejoMapUI
+from modulo_B.graph.graph import Graph
+from modulo_B.algorithms.dijkstra import DijkstraSolver
+from modulo_B.algorithms.bellman import BellmanFordSolver
+from modulo_B.algorithms.mst import PrimMST
+from modulo_B.algorithms.kruskal import KruskalMST
+from modulo_B.algorithms.flow import EdmondsKarp
+from modulo_C.analysis.impact import SETImpactAnalyzer
+from modulo_C.analysis.pert import get_setp_phase2_planning
+from modulo_C.analysis.nash import NashSolver, GameSolver
+from modulo_A.core.router import SincelejoRouter
+from modulo_A.trees.b_tree import BTree
+from modulo_C.visualizer.map_visualizer import MapVisualizer
+from modulo_C.visualizer.map_ui import SincelejoMapUI
 
 
 # Instancias globales que se inicializarán en main
@@ -596,7 +596,7 @@ def main():
     print("  Presione Ctrl+C en esta consola para detener el servidor.")
     print("=" * 64)
 
-    from visualizer.server import start_server
+    from modulo_C.visualizer.server import start_server
     start_server(g, router, btree, port=8000)
 
 
