@@ -1,7 +1,7 @@
 ================================================================
   SincelejoRoute v2 — Reporte de Sesión SETP
-  Inicio : 2026-05-20 15:01:44
-  Cierre : 2026-05-20 15:01:44
+  Inicio : 2026-05-20 15:10:14
+  Cierre : 2026-05-20 15:10:14
 ================================================================
 
 
@@ -30,7 +30,7 @@
 
   MST global (Prim) : 88 min total | 19 aristas
 
-  ⏱  Tiempo total consulta : 0.4 ms ✓
+  ⏱  Tiempo total consulta : 0.3 ms ✓
 
 ════════════════════════════════════════════════════════════════
   UNISUCRE → IPS SEYSA

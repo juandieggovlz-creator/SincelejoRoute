@@ -1473,6 +1473,11 @@
                 `;
                 document.getElementById('minimax-details').innerHTML = minimaxHTML;
 
+                // Llamar automáticamente a la accesibilidad para que ningún cuadro quede vacío
+                if (document.getElementById('access-table-body').innerHTML === '') {
+                    runAccessibilityReport();
+                }
+
             } catch(e) {
                 alert("El Reporte de Impacto, Teoría de Juegos y PERT/CPM requieren que el servidor Python esté corriendo.");
             }
@@ -1522,6 +1527,11 @@
                         <td><span class="badge badge-green">+${u.improvement}%</span></td>
                     </tr>
                 `).join('');
+                
+                // Si la tabla de impacto principal está vacía, cargarla también
+                if (document.getElementById('impact-lm-v1').innerText === '--') {
+                    runImpactReport();
+                }
                 
             } catch(e) {
                 alert("Requiere el servidor Python corriendo.");
