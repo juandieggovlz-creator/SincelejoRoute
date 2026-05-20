@@ -207,7 +207,8 @@ N01,N07,6,300,true,true
 
 | Nombre                  | Rol                           |
 |-------------------------|-------------------------------|
-| Juan V.                 | Desarrollo e integración      |
+| Juan Velez              | Desarrollo e integración      |
+| Diego Romero            | Desarrollo e integración      |
 
 ---
 
