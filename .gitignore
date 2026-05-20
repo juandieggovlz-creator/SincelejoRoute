@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+dist/
+build/
+.vscode/
+.idea/
+move_and_refactor.py
+scratch/
+test_js.js
+test_script.js
+test_payload.json
+implementation_plan.md
