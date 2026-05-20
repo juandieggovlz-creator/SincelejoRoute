@@ -1,0 +1,81 @@
+================================================================
+  SincelejoRoute v2 — Reporte de Sesión SETP
+  Inicio : 2026-05-19 15:40:08
+  Cierre : 2026-05-19 15:40:08
+================================================================
+
+
+════════════════════════════════════════════════════════════════
+  SincelejoRoute v2 — FINAL (17 Módulos)
+════════════════════════════════════════════════════════════════
+  Grafo: 20 nodos, 34 aristas
+
+════════════════════════════════════════════════════════════════
+  SincelejoRoute v2 — MODO DEMO (Semana 8)
+════════════════════════════════════════════════════════════════
+  Consultas estándar del docente — cada una < 1 segundo
+
+
+════════════════════════════════════════════════════════════════
+  CECAR → Terminal de Transporte
+════════════════════════════════════════════════════════════════
+
+  [N03] CECAR  →  [N08] Terminal de Transporte
+
+  Ruta convencional : 19 min  |  [N03] CECAR ⚡══ [N15] Glorieta Sincelejito ⚡══ [N07] Estacion Central SETP ⚡══ [N08] Terminal de Transporte
+  Ruta SETP         : 8 min  |  [N03] CECAR ⚡══ [N15] Glorieta Sincelejito ⚡══ [N07] Estacion Central SETP ⚡══ [N08] Terminal de Transporte
+
+  Flujo sin SETP    : 0 p/h
+  Flujo con SETP    : 1100 p/h
+
+  MST global (Prim) : 88 min total | 19 aristas
+
+  ⏱  Tiempo total consulta : 0.6 ms ✓
+
+════════════════════════════════════════════════════════════════
+  UNISUCRE → IPS SEYSA
+════════════════════════════════════════════════════════════════
+
+  [N02] UNISUCRE  →  [N04] IPS SEYSA
+
+  Ruta convencional : 13 min  |  [N02] UNISUCRE ─── [N01] UAJS Sede C ─── [N13] Av. Alfonso Lopez ─── [N04] IPS SEYSA
+  Ruta SETP         : 9 min  |  [N02] UNISUCRE ⚡══ [N10] PEP La Bastilla ⚡══ [N13] Av. Alfonso Lopez ─── [N04] IPS SEYSA
+
+  Flujo sin SETP    : 0 p/h
+  Flujo con SETP    : 420 p/h
+
+  MST global (Prim) : 88 min total | 19 aristas
+
+  ⏱  Tiempo total consulta : 0.4 ms ✓
+
+════════════════════════════════════════════════════════════════
+  El Pescador → Estación Central SETP
+════════════════════════════════════════════════════════════════
+
+  [N19] El Pescador  →  [N07] Estacion Central SETP
+
+  Ruta convencional : 10 min  |  [N19] El Pescador ─── [N17] Mercado de Sincelejo ⚡══ [N07] Estacion Central SETP
+  Ruta SETP         : 6 min  |  [N19] El Pescador ─── [N17] Mercado de Sincelejo ⚡══ [N07] Estacion Central SETP
+
+  Flujo sin SETP    : 280 p/h
+  Flujo con SETP    : 840 p/h
+  Incremento flujo  : +200%
+
+  MST global (Prim) : 88 min total | 19 aristas
+
+  ⏱  Tiempo total consulta : 0.3 ms ✓
+
+════════════════════════════════════════════════════════════════
+  Verificación de Métricas del Enunciado
+════════════════════════════════════════════════════════════════
+
+  setp_route(N01, N08)     = 8 min  (esperado 16)  ✗
+  dijkstra(N01, N08)       = 16 min  (esperado 25)  ✗
+  Flujo sin SETP           = 460 p/h (esperado 460) ✓
+  Flujo con boost          = 910 p/h (esperado 910) ✓
+  Incremento flujo         = +98%   (esperado +98%) ✓
+  MST estándar (Prim)      = 88 min  (esperado 88)  ✓
+  MST SETP (Prim)          = 76 min  (esperado 76)  ✓
+  Nodos SETP               = 6       (esperado 6)   ✓
+  Componentes conexas      = 1       (esperado 1)   ✓
+  Ciclo detectado          = True    (esperado True) ✓
